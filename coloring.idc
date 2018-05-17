@@ -6,10 +6,10 @@ static main(void)
     while ( head != BADADDR ){
         op = GetMnem(head);
         if ( op == "jmp" || op == "call" )
-            SetColor(head, CIC_ITEM, 0xDDDDFF);
+            SetColor(head, CIC_ITEM, 0x010187);
             
         if (op == "xor")
-            SetColor(head, CIC_ITEM, 0xC9E6C8);
+            SetColor(head, CIC_ITEM, 0x870119);
         head = NextHead(head, 0xFFFFFFFF);
     }
 }
